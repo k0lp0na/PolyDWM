@@ -55,7 +55,7 @@ paru -S --noconfirm polybar-dwm-git pfetch-rs-bin betterlockscreen beautyline ph
 
 # Build and install DWM
 echo "Building and installing DWM..."
-cd DWM || exit
+cd dwm || exit
 sudo make clean install
 rm -f drw.o dwm.o dwm-msg.o util.o config.h
 cd .. || exit
