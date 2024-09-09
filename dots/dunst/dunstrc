@@ -2,7 +2,7 @@
  follow = none
  width = 350
  height = 200
- origin = top-left
+ origin = top-center
  offset = 8 x 30
  scale = 0
 
