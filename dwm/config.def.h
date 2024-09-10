@@ -123,7 +123,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_S,      unfloatvisible, {0} },
         { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-        { MODKEY,                       XK_p,      togglescratch,  {.v = scratchpadcmd } },
+        { MODKEY,                       XK_w,      togglescratch,  {.v = scratchpadcmd } },
         { MODKEY,                       XK_q,      removescratch,  {.v = scratchpadcmd } },
         { MODKEY|Mod1Mask,         XK_Return,      setscratch,     {.v = scratchpadcmd } },
 	TAGKEYS(                        XK_1,                      0)

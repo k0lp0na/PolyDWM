@@ -8,7 +8,7 @@
 # Used Software
 
 + **Window Manager** = Dynamic window manager
-   - patched woth 23 patches
+   - patched woth 23 patches. Has 9 Layouts and scratchpads
 
 + **Status Bar** = Polybar
   -  polybar-dwm-git from aur
@@ -78,7 +78,7 @@ cd DWM
 Now run the install script 
 
 ```
-./install.sh
+sudo ./install.sh
 ```
 
 
@@ -89,6 +89,6 @@ Now run the install script
 
 ### Post Things
 
-Rebooted into DWM. Set theme/cursor , wallpaper etc. setup power management. FOr issue with polybar brithness module and misc problems refer to my [ArchBspwm Repo](https://github.com/k0lp0na/ArchBspwm) for fixes. 
+Rebooted into DWM. Set theme/cursor , wallpaper etc. setup power management.:) 
 
 After all that the setup is now ready to go. Now maybe actually get some work done instead of configing .dotfiles. anyways enjoy!
