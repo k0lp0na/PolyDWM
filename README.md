@@ -75,6 +75,12 @@ git clone --depth 1 https://github.com/k0lp0na/DWM.git
 cd DWM
 ```
 
+fix pacman. uncomment colors and add
+
+```
+ILoveCandy
+```
+
 Now run the install script 
 
 ```
