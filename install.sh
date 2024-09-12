@@ -53,14 +53,15 @@ ln -sf ~/DWM/dots/mpv ~/.config/
 ln -sf ~/DWM/dots/omp ~/.config/
 ln -sf ~/DWM/dots/kitty ~/.config/
 ln -sf ~/DWM/dots/yazi ~/.config/
+ln -sf ~/DWM/dots/nano ~/.config/
 
 # Install packages using pacman
 echo "Installing packages..."
-sudo pacman -S --noconfirm alacritty rofi dunst picom sxhkd fish lsd fzf zoxide nitrogen firefox xorg xorg-xsetroot nemo maim xclip vulkan-intel fastfetch ttf-jetbrains-mono-nerd lxappearance qt5ct qt6ct mpv xed qbittorrent playerctl pacman-contrib noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra rofi-emoji vlc pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber polkit-gnome xfce4-power-manager kitty yazi htop
+sudo pacman -S --noconfirm alacritty rofi dunst picom sxhkd fish lsd fzf zoxide nitrogen firefox xorg xorg-xsetroot nemo maim xclip vulkan-intel fastfetch ttf-jetbrains-mono-nerd lxappearance qt5ct qt6ct mpv xed qbittorrent playerctl pacman-contrib noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra rofi-emoji vlc pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber polkit-gnome xfce4-power-manager kitty yazi htop nano-syntax-highlighting
 
 # Install AUR packages using paru
 echo "Installing AUR packages..."
-paru -S --noconfirm polybar-dwm-git pfetch-rs-bin betterlockscreen beautyline phinger-cursors rofi-greenclip brave-bin vesktop-bin
+paru -S --noconfirm polybar-dwm-git pfetch-rs-bin betterlockscreen rofi-greenclip brave-bin vesktop-bin
 
 # Build and install DWM
 echo "Building and installing DWM..."
@@ -181,6 +182,9 @@ mkdir ~/.config/qt6ct/colors
 
 sudo cp -rp ~/DWM/themes/QT/* ~/.config/qt5ct/colors/
 sudo cp -rp ~/DWM/themes/QT/* ~/.config/qt6ct/colors/
+
+# nano
+sudo sed -i 's/icolor brightnormal/icolor normal/g' /usr/share/nano-syntax-highlighting/nanorc.nanorc
 
 # Setup Python virtual environment
 echo "Setting up Python virtual environment..."
