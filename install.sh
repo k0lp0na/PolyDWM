@@ -141,6 +141,47 @@ else
     echo "The variable _JAVA_AWT_WM_NONREPARENTING has been added to $PROFILE_FILE."
 fi
 
+#!/bin/bash
+
+# Define the configuration file path
+CONF_FILE="/etc/sddm.conf"
+
+# Check if the file exists
+if [ ! -f "$CONF_FILE" ]; then
+  echo "Configuration file $CONF_FILE does not exist. Creating it."
+  touch "$CONF_FILE"
+fi
+
+# Check if the [Theme] section already exists
+if grep -q '^\[Theme\]' "$CONF_FILE"; then
+  # [Theme] section exists, append or update the Current line
+  if grep -q '^Current=' "$CONF_FILE"; then
+    echo "Updating existing Current line in [Theme] section."
+    sed -i 's/^Current=.*/Current=tk/' "$CONF_FILE"
+  else
+    echo "Appending Current=tk to existing [Theme] section."
+    sed -i '/^\[Theme\]/a Current=tk' "$CONF_FILE"
+  fi
+else
+  # [Theme] section does not exist, create it
+  echo "Creating [Theme] section and adding Current=tk."
+  echo -e "\n[Theme]\nCurrent=tk" >> "$CONF_FILE"
+fi
+
+echo "Configuration updated successfully."
+
+# themes stuff
+
+sudo cp -rp ~/DWM/themes/GTK/* /usr/share/themes/
+sudo cp -rp ~/DWM/themes/icon/* /usr/share/icons/
+sudo cp -rp ~/DWM/themes/'sddm theme'/* /usr/share/sddm/themes/
+
+mkdir ~/.config/qt5ct/colors
+mkdir ~/.config/qt6ct/colors
+
+sudo cp -rp ~/DWM/themes/QT/* ~/.config/qt5ct/colors/
+sudo cp -rp ~/DWM/themes/QT/* ~/.config/qt6ct/colors/
+
 # Setup Python virtual environment
 echo "Setting up Python virtual environment..."
 sudo pacman -S --noconfirm python-pip

@@ -95,6 +95,6 @@ sudo ./install.sh
 
 ### Post Things
 
-Rebooted into DWM. Get a gtk/qt theme set theme/cursor , wallpaper etc. setup power management.:) 
+Rebooted into DWM. Set a gtk/qt theme , wallpaper etc. setup power management and browsers. :) 
 
 After all that the setup is now ready to go. Now maybe actually get some work done instead of configing .dotfiles. anyways enjoy!
