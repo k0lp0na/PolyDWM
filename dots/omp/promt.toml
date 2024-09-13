@@ -1,6 +1,5 @@
 version = 2
 final_space = true
-auto_upgrade = true
 
 [[blocks]]
   type = 'prompt'

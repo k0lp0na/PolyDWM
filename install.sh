@@ -178,15 +178,15 @@ if grep -q '^\[Theme\]' "$CONF_FILE"; then
   # [Theme] section exists, append or update the Current line
   if grep -q '^Current=' "$CONF_FILE"; then
     echo "Updating existing Current line in [Theme] section."
-    sed -i 's/^Current=.*/Current=tk/' "$CONF_FILE"
+    sed -i 's/^Current=.*/Current=tokyo night/' "$CONF_FILE"
   else
     echo "Appending Current=tk to existing [Theme] section."
-    sed -i '/^\[Theme\]/a Current=tk' "$CONF_FILE"
+    sed -i '/^\[Theme\]/a Current=tokyo night' "$CONF_FILE"
   fi
 else
   # [Theme] section does not exist, create it
   echo "Creating [Theme] section and adding Current=tk."
-  echo -e "\n[Theme]\nCurrent=tk" >> "$CONF_FILE"
+  echo -e "\n[Theme]\nCurrent=tokyo night" >> "$CONF_FILE"
 fi
 
 echo "Configuration updated successfully."
@@ -195,7 +195,7 @@ echo "Configuration updated successfully."
 
 sudo cp -rp ~/DWM/themes/GTK/* /usr/share/themes/
 sudo cp -rp ~/DWM/themes/icon/* /usr/share/icons/
-sudo cp -rp ~/DWM/themes/'sddm theme'/* /usr/share/sddm/themes/
+sudo cp -rp ~/DWM/themes/sddm/* /usr/share/sddm/themes/
 
 mkdir -p ~/.config/qt5ct/colors
 mkdir -p ~/.config/qt6ct/colors
