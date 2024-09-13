@@ -48,7 +48,7 @@
 
   
 ### Misc/Advanced ###
- corner_radius = 0
+ corner_radius = 8
  corners = all
 
 

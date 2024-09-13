@@ -1,5 +1,6 @@
 version = 2
 final_space = true
+auto_upgrade = true
 
 [[blocks]]
   type = 'prompt'
@@ -62,3 +63,4 @@ final_space = true
   pink = '#F5BDE6'
   text = '#494D64'
   wight = '#FFFFFF'
+
