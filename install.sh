@@ -178,15 +178,15 @@ if grep -q '^\[Theme\]' "$CONF_FILE"; then
   # [Theme] section exists, append or update the Current line
   if grep -q '^Current=' "$CONF_FILE"; then
     echo "Updating existing Current line in [Theme] section."
-    sed -i 's/^Current=.*/Current=tokyo night/' "$CONF_FILE"
+    sed -i 's/^Current=.*/Current=tk/' "$CONF_FILE"
   else
     echo "Appending Current=tk to existing [Theme] section."
-    sed -i '/^\[Theme\]/a Current=tokyo night' "$CONF_FILE"
+    sed -i '/^\[Theme\]/a Current=tk' "$CONF_FILE"
   fi
 else
   # [Theme] section does not exist, create it
   echo "Creating [Theme] section and adding Current=tk."
-  echo -e "\n[Theme]\nCurrent=tokyo night" >> "$CONF_FILE"
+  echo -e "\n[Theme]\nCurrent=tk" >> "$CONF_FILE"
 fi
 
 echo "Configuration updated successfully."
