@@ -39,13 +39,16 @@ super + alt + a
 ###### apps ######
 
 super + a
-    alacritty --class Anime --option window.dimensions.columns=76 --option window.dimensions.lines=18 -e bash -c "source ~/myenv/bin/activate && anipy-cli"
+        alacritty --class Anime --option window.dimensions.columns=76 --option window.dimensions.lines=18 -e bash -c "source ~/myenv/bin/activate && anipy-cli"
 
 super + ctrl + Return
         kitty
 
 super + b 
-       firefox
+        brave
+
+super + shift + b
+        firefox 
 
 super + z
         spotify
@@ -57,4 +60,4 @@ super + shift + v
         nemo
 
 super + d 
-    vesktop
+        vesktop

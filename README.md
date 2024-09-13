@@ -33,7 +33,7 @@
 
 + **Fonts** = Jetbrains Mono Nerd Font and Noto Sans CJK
 
-+ **Colors** = Mix of Tokyo night / Cappuccin   
++ **Colors** = Mix of Tokyo night / Cappuccin
 
 + **Screenshot utility** = Maim with xclip
 
@@ -45,17 +45,17 @@
   -  with the tokyo night theme from aur
 
 
-# Instalation 
+# Instalation
 
 > Install Arch. also rememmber to install base-devel during installation
 
-connect to the internet 
+connect to the internet
 
 ```
 nmcli device wifi connect !name! password !psswd!
 ```
 
-install git and reflector 
+install git and reflector
 
 ```
 sudo pacman -S git reflector
@@ -67,7 +67,7 @@ fic mirrors
 sudo reflector --country 'Bangladesh' --latest 10 --sort rate --save /etc/pacman.d/mirrorlist 
 ```
 
-clone the repo and cd 
+clone the repo and cd
 
 ```
 git clone --depth 1 https://github.com/k0lp0na/DWM.git
@@ -81,7 +81,7 @@ fix pacman. uncomment colors and add
 ILoveCandy
 ```
 
-Now run the install script 
+Now run the install script
 
 ```
 sudo ./install.sh
