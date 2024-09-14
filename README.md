@@ -47,7 +47,7 @@
 
 # Instalation
 
-> [!Remember]
+> [!IMPORTANT]
 > Install Arch. also rememmber to install base-devel during installation. also add the user in the video group
 
 connect to the internet
