@@ -47,12 +47,19 @@
 
 # Instalation
 
-> Install Arch. also rememmber to install base-devel during installation
+> [!Remember]
+> Install Arch. also rememmber to install base-devel during installation. also add the user in the video group
 
 connect to the internet
 
 ```
 nmcli device wifi connect !name! password !psswd!
+```
+
+fix pacman in /etc/pacman.conf uncomment colors and add
+
+```
+ILoveCandy
 ```
 
 install git and reflector
@@ -75,16 +82,10 @@ git clone --depth 1 https://github.com/k0lp0na/DWM.git
 cd DWM
 ```
 
-fix pacman. uncomment colors and add
+Now run the install script. it will ask for password several time
 
 ```
-ILoveCandy
-```
-
-Now run the install script
-
-```
-sudo ./install.sh
+./install.sh
 ```
 
 
