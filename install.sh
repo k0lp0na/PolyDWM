@@ -57,7 +57,7 @@ ln -sf ~/DWM/dots/nano ~/.config/
 
 # Install packages using pacman
 echo "Installing packages..."
-sudo pacman -S --noconfirm alacritty rofi dunst picom sxhkd fish lsd fzf zoxide nitrogen firefox xorg xorg-xsetroot nemo maim xclip vulkan-intel fastfetch ttf-jetbrains-mono-nerd lxappearance qt5ct qt6ct mpv xed qbittorrent playerctl pacman-contrib noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra rofi-emoji vlc pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber polkit-gnome xfce4-power-manager kitty yazi htop
+sudo pacman -S --noconfirm alacritty rofi dunst picom sxhkd fish lsd fzf zoxide nitrogen firefox xorg xorg-xsetroot nemo maim xclip vulkan-intel fastfetch ttf-jetbrains-mono-nerd lxappearance qt5ct qt6ct mpv xed qbittorrent playerctl pacman-contrib noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra rofi-emoji vlc pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber polkit-gnome xfce4-power-manager kitty yazi htop spotify-launcher
 
 # Install AUR packages using paru
 echo "Installing AUR packages..."

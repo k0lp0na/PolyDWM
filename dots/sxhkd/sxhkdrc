@@ -6,16 +6,16 @@ super + Escape
 ########### ss ###########
 
 Print
-    maim -m 10 ~/Pictures/ss/$(date).png && notify-send ss -t 500
+    maim -m 10 ~/Pictures/ss/$(date).png && notify-send 'maim' 'fullscreeen shot saved' -t 500
 
 shift + Print
-   maim -u -m 10 -s | xclip -selection clipboard -t image/png && notify-send ss -t 250
+   maim -u -m 10 -s | xclip -selection clipboard -t image/png && notify-send 'maim' 'partial shot copied to clipbaord' -t 500
 
 super + shift + Print
-   maim -u -m 10 -s ~/Pictures/ss/$(date).png && notify-send ss -t 500
+   maim -u -m 10 -s ~/Pictures/ss/$(date).png && notify-send 'maim' 'partial shot saved' -t 500
    
 alt + Print
-   maim -m 10 -st 9999999 ~/Pictures/ss/$(date).png && maim -m 10 -st 9999999  | xclip -selection clipboard -target image/png && notify-send ss -t 250
+   maim -m 10 -st 9999999 ~/Pictures/ss/$(date).png && maim -m 10 -st 9999999  | xclip -selection clipboard -target image/png && notify-send 'maim' 'app window saved & copied' -t 500
 
 ####### lock/power #####
 
@@ -51,7 +51,7 @@ super + shift + b
         firefox 
 
 super + z
-        spotify
+        spotify-launcher
 
 super + v
         kitty -e yazi
