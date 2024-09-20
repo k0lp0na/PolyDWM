@@ -1,4 +1,7 @@
 
+> [!Caution]
+> a recent update decided to break polybar-dwm-module(aur) so the entire setup just died :)
+
 # SHOWCASE
 
 ![Alt text](/dwm/p1.webp)
