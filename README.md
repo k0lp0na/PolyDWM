@@ -1,6 +1,6 @@
 
 > [!Caution]
-> a recent update decided to break polybar-dwm-git(aur) so the entire setup just died :)
+> a recent update decided to break polybar-dwm-git(aur) so the entire setup just died aka no workspace module :)
 
 # SHOWCASE
 
