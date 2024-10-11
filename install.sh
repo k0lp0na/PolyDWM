@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mv ~/PolyDWM ~/DWM
+
+
 # Error handling function
 handle_error() {
     echo "An error occurred on line $1"

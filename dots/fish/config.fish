@@ -15,7 +15,7 @@ end
 
 
 function dclean
-    rm drw.o dwm.o dwm-msg.o util.o config.h
+    rm -f drw.o dwm.o dwm-msg.o util.o config.h
 end
 
 function dmake
